@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Medicine Information</h1>
+        <form action="nextpage.html" method="post">
+            <label for="medicine-name">Medicine Name:</label>
+            <select id="medicine-name" name="medicine-name" required>
+                <option value="" disabled selected>Select a medicine</option>
+                <option value="Aspirin">Aspirin</option>
+                <option value="Tylenol">Tylenol</option>
+                <option value="Amoxicillin">Amoxicillin</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="date" id="expiry-date" name="expiry-date" required>
+
+            <button type="submit">Go to Next Page</button>
+        </form>
+    </div>
+</body>
+</html>
